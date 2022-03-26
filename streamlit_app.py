@@ -9,5 +9,6 @@ import streamlit as st
 
 st.write("""
          # My first APP
-         This is my first app
+         This is my first app!
          """)
+st.info("It's ok!")
