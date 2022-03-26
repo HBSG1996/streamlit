@@ -47,4 +47,4 @@ def main():
 	return get_json#print(get_json)
 
 data = pd.DataFrame(main()['Data']['LSJZList'])
-st.dataframe(data)
+st.table(data)
