@@ -17,7 +17,7 @@ headers = {
     'Referer': 'http://fundf10.eastmoney.com/jjjz_161725.html',
     'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36'
 }
-
+@st.cache
 def get_response(url,params):
     try:
         response = requests.get(url,params=params,headers=headers)
@@ -28,7 +28,7 @@ def get_response(url,params):
         print('err: %s' % e)
 
 
-
+@st.cache
 def main():
 	t = time.time()
 	nowTime = lambda:int(round(t * 1000))
